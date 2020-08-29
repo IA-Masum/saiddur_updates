@@ -1,0 +1,42 @@
+a:hover{
+    color: black;
+    text-decoration: none!important;
+}
+
+a{
+    color: black!important;
+}
+
+.banner{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-sm{
+    height: 400px!important;
+}
+
+.footer-nav{
+    list-style: none;
+    padding:0 ;
+}
+
+.footer-nav li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-link{
+    color: #0073AA!important;
+    font-weight: bold;
+}
+
+.farjax-link{
+    font-weight: bold;
+    color: rgb(235, 180, 43)!important;
+}
