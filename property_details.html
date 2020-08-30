@@ -100,7 +100,7 @@
                             <h6>505 S RIMPAU BOULEVARD, LOS ANGELES, CA 90020</h6>
                         </div>
 
-                        <div class="col-md-4 mt-2">
+                        <div class="col-md-4 mt-2 text-md-right">
                             <h6>$300000</h6>
                         </div>
                     </div>
@@ -367,11 +367,84 @@
                         </div>
                         <div class="tab-pane fade" id="calculation" role="tabpanel" aria-labelledby="nav-contact-tab">
 
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed impedit blanditiis, non
-                            quaerat laborum voluptates quasi repudiandae error vitae, laboriosam soluta voluptas libero?
-                            Consectetur pariatur quaerat, vitae, earum nostrum dignissimos veritatis praesentium id
-                            natus quibusdam rerum consequuntur corporis obcaecati, voluptatum cum ab temporibus nisi
-                            dolorem suscipit placeat. Nostrum, quidem minima?
+                            <div class="row mt-4">
+                                <div class="col-sm-7 text-muted mt-2">
+                                    <div class="d-flex justify-content-center">
+                                        <div style="max-width: 400px;">
+                                            <h2><span id="totalCostDisplay">$3,395</span><small> per month</small></h2>
+                                            <strong class="ml-3"><span id="termDisplay"></span> Year Fixed <span id="intrstDisplay"></span> % Interest Rate</strong>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-sm-5 mt-2">
+                                    <div class="clearfix border-bottom border-success pb-1 mb-2">
+                                        <div class="float-left">
+                                            Principal + Interest :
+                                        </div>
+                                        <div class="float-right text-success">
+                                            <strong id="piDisplay"></strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix border-bottom border-success pb-1 mb-2">
+                                        <div class="float-left">
+                                            Monthly Tax :
+                                        </div>
+                                        <div class="float-right text-success">
+                                            <strong>$000</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix border-bottom border-success pb-1 mb-2">
+                                        <div class="float-left">
+                                            Monthly Insurance :
+                                        </div>
+                                        <div class="float-right text-success">
+                                            <strong>$000</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="input-group mb-3">
+                                      <input type="text" class="form-control calField text-right" id="term" placeholder="Term" value="30" >
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text">yrs</div>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="input-group mb-3">
+                                      <input type="text" class="form-control calField  text-right" id="intrst" placeholder="Interest Rate" value="3.22" >
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text">%</div>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text">$</div>
+                                      </div>
+                                      <input type="text" class="form-control calField" id="dwnpymnt" placeholder="Down Payment" value="150000" >
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <div class="input-group-text">$</div>
+                                      </div>
+                                      <input type="text" class="form-control calField" id="price" placeholder="List Price" value="300000" >
+                                    </div>
+                                </div>
+
+                            </div>
 
                         </div>
                     </div>
@@ -380,7 +453,7 @@
 
             </div>
             <div class="col-md-3">
-                <form style="max-width: 300px;" action="" class="bg-dark p-3 rounded shadow">
+                <form style="max-width: 300px;" action="" class="bg-dark p-3 rounded shadow mx-auto">
                     <h5 class="text-white text-center">Start Property Search</h5>
                     <input type="text" name="city_zip" class="form-control mt-3" placeholder="City or Zip Code">
                     <select name="type" id="" class="form-control mt-2">
@@ -654,15 +727,16 @@
     </section>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+
+        <script src="./pmt.js"></script>
 
 </body>
 
